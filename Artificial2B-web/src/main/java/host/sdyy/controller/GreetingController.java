@@ -36,4 +36,13 @@ public class GreetingController {
 		// 返回值String也会被SpringMVC整合为一个ModelAndView，以供前端使用。
 		return "userform";		//这里指定返回的模板文件，如果没写则默认为请求路径同名的模板
 	}
+
+	@GetMapping("/subDitTemplates")
+	public String subDitTemplates(@RequestParam(name="name", required=false, defaultValue="1") String name, Model model) {
+		// 请求路径与返回String不同，使用retun String的模板
+		getUserInfoService.getUserInfoById(name, model);
+		// 这里返回的数据类型是String，但实际上更多的数据通过本函数中Model model传给了前端。
+		// 返回值String也会被SpringMVC整合为一个ModelAndView，以供前端使用。
+		return "./subdir/subDitTemplates";		//这里指定返回的模板文件，如果没写则默认为请求路径同名的模板,子目录需要指定路径
+	}
 }
