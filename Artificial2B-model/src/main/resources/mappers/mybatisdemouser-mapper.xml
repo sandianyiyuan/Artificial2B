@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="host.sdyy.mybatis.mapper.MVCMybatisDemoUserMapper">
+<mapper namespace="host.sdyy.mapper.MVCMybatisDemoUserMapper">
 
     <!-- Read -->
-    <select id="queryUserInfo" resultType="host.sdyy.mybatis.entity.MVCMybatisDemoUser">
+    <select id="queryUserInfo" resultType="host.sdyy.entity.MVCMybatisDemoUser">
         select * from UserInfo where id=#{id}
     </select>
 
+    <select id="findAll" resultType="host.sdyy.entity.MybatisDemoUser">
+        SELECT * FROM tb_user
+    </select>
 </mapper>

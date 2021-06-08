@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package host.sdyy.mybatis.config;
+package host.sdyy.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
@@ -25,6 +25,6 @@ import org.springframework.context.annotation.Configuration;
  * @author paida 派哒 zeyu.pzy@alibaba-inc.com
  */
 @Configuration
-@MapperScan("host.sdyy.mybatis")
+@MapperScan("host.sdyy.mapper")
 public class MVCMybatisDemoConfig {
 }

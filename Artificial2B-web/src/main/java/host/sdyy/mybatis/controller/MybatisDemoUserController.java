@@ -22,8 +22,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import host.sdyy.mybatis.entity.MybatisDemoUser;
-import host.sdyy.mybatis.mapper.MybatisDemoUserMapper;
+import host.sdyy.entity.MybatisDemoUser;
+import host.sdyy.mapper.MybatisDemoUserMapper;
 
 @RestController
 @RequestMapping("/usermybatis")

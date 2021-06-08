@@ -14,23 +14,49 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package host.sdyy.mybatis.mapper;
+package host.sdyy.entity;
 
-import host.sdyy.mybatis.entity.MVCMybatisDemoUser;
+import java.io.Serializable;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+public class MybatisDemoUser implements Serializable {
 
-import java.util.List;
+    /**
+     * 编号
+     */
+    private Long id;
+
+    /**
+     * 用户名
+     */
+    private String username;
+
+    /**
+     * 密码
+     */
+    private String password;
 
 
-/**
- * 指定这是一个操作数据库的mapper
- *
- * @author paida 派哒 zeyu.pzy@alibaba-inc.com
- */
-@Mapper
-public interface MVCMybatisDemoUserMapper {
-    MVCMybatisDemoUser queryUserInfo(String id);
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

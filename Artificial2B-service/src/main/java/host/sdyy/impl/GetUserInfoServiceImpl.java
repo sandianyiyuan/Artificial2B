@@ -1,15 +1,12 @@
 package host.sdyy.impl;
 
 
-import host.sdyy.mybatis.entity.MVCMybatisDemoUser;
-import host.sdyy.mybatis.mapper.MVCMybatisDemoUserMapper;
+import host.sdyy.entity.MVCMybatisDemoUser;
+import host.sdyy.mapper.MVCMybatisDemoUserMapper;
 import host.sdyy.GetUserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-
-import javax.annotation.Resource;
 
 
 

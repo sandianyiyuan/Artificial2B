@@ -14,19 +14,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package host.sdyy.mybatis.mapper;
+package host.sdyy.config;
 
-import java.util.List;
-
-import host.sdyy.mybatis.entity.MybatisDemoUser;
-import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
 
 /**
- * 指定这是一个操作数据库的mapper
+ * 使用MapperScan批量扫描所有的Mapper接口
  *
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
-@Mapper
-public interface MybatisDemoUserMapper {
-    List<MybatisDemoUser> findAll();
+@MapperScan("host.sdyy")
+public class MybatisDemoConfig {
+
 }
