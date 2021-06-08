@@ -25,6 +25,6 @@ import org.springframework.context.annotation.Configuration;
  * @author paida 派哒 zeyu.pzy@alibaba-inc.com
  */
 @Configuration
-@MapperScan("host.sdyy.mapper")
+@MapperScan("host.sdyy")
 public class MVCMybatisDemoConfig {
 }
