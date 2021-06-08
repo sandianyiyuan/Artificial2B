@@ -4,7 +4,7 @@
 <mapper namespace="host.sdyy.mybatis.mapper.MVCMybatisDemoUserMapper">
 
     <!-- Read -->
-    <select id="queryUserInfo" resultType="host.sdyy.mybatis.entity.MVCMybatisDemoUser">
+    <select id="queryUserInfo" resultType="host.sdyy.entity.MVCMybatisDemoUser">
         select * from UserInfo where id=#{id}
     </select>
 

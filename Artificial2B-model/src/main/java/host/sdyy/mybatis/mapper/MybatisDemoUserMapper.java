@@ -18,7 +18,7 @@ package host.sdyy.mybatis.mapper;
 
 import java.util.List;
 
-import host.sdyy.mybatis.entity.MybatisDemoUser;
+import host.sdyy.entity.MybatisDemoUser;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

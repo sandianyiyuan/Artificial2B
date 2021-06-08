@@ -14,49 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package host.sdyy.mybatis.entity;
+package host.sdyy.config;
 
-import java.io.Serializable;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Configuration;
 
-public class MybatisDemoUser implements Serializable {
-
-    /**
-     * 编号
-     */
-    private Long id;
-
-    /**
-     * 用户名
-     */
-    private String username;
-
-    /**
-     * 密码
-     */
-    private String password;
-
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
+/**
+ * 使用MapperScan批量扫描所有的Mapper接口
+ *
+ * @author paida 派哒 zeyu.pzy@alibaba-inc.com
+ */
+@Configuration
+@MapperScan("host.sdyy.mybatis")        //这个路径必须要正确，否则项目无法启动
+public class MVCMybatisDemoConfig {
 }

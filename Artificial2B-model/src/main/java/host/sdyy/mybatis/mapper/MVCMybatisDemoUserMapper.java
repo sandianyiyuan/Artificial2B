@@ -16,13 +16,9 @@
  */
 package host.sdyy.mybatis.mapper;
 
-import host.sdyy.mybatis.entity.MVCMybatisDemoUser;
+import host.sdyy.entity.MVCMybatisDemoUser;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 
 /**

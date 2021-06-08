@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package host.sdyy.mybatis.entity;
+package host.sdyy.entity;
 
 import java.io.Serializable;
 
