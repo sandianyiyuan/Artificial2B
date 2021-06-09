@@ -23,7 +23,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import host.sdyy.entity.MybatisDemoUser;
+<<<<<<< HEAD
 import host.sdyy.mapper.MybatisDemoUserMapper;
+=======
+import host.sdyy.mybatis.mapper.MybatisDemoUserMapper;
+>>>>>>> master
 
 @RestController
 @RequestMapping("/usermybatis")
