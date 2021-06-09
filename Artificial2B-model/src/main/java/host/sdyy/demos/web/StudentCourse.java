@@ -3,15 +3,15 @@ import java.util.List;
 /**
  * 学生选课实体
  * 学生与课程之间的对应关系实体
- * 中间关系实体
- *
+ * 中间关系实体 这个实体根据实际需求来决定是否创建。
+ * 这里这个实体在程序中并没有用到。
  *
  */
 public class StudentCourse {
 
     private int sid;
     private int cid;
-    private int sorce;
+    private int id;
 
     private List<Student> students;
     private List<Course> courses;
@@ -28,10 +28,10 @@ public class StudentCourse {
         this.cid = cid;
     }
     public int getSorce() {
-        return sorce;
+        return id;
     }
     public void setSorce(int sorce) {
-        this.sorce = sorce;
+        this.id = sorce;
     }
     public List<Student> getStudents() {
         return students;

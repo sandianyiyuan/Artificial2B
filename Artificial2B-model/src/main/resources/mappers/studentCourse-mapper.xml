@@ -4,11 +4,11 @@
 <mapper namespace="host.sdyy.mapper.StudentCourseMapper">
 
     <!-- Read -->
-    <select id="searchCourseByStudentId" resultType="host.sdyy.entity.MVCMybatisDemoUser">
-        select * from UserInfo where id=#{id}
+    <select id="searchCourseByStudentId" resultType="host.sdyy.entity.StudentChooseClasses">
+        select * from Course where id=#{id}
     </select>
 
-    <select id="findAll" resultType="host.sdyy.entity.MybatisDemoUser">
-        SELECT * FROM tb_user
+    <select id="searchStudentsByCourseId" resultType="host.sdyy.entity.ClassesEnrolledStudent">
+        SELECT * FROM Student where id=#{id}
     </select>
 </mapper>
