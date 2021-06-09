@@ -25,6 +25,6 @@ import org.springframework.context.annotation.Configuration;
  * @author paida 派哒 zeyu.pzy@alibaba-inc.com
  */
 @Configuration
-@MapperScan("host.sdyy")    //这个路径必须要正确，否则项目无法启动
+@MapperScan("host.sdyy.mapper")    //这个路径必须要正确，否则会提示Invalid bound statement (not found)
 public class MVCMybatisDemoConfig {
 }

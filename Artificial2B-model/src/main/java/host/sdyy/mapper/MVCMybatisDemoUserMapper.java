@@ -26,7 +26,8 @@ import org.apache.ibatis.annotations.Mapper;
  *
  * @author paida 派哒 zeyu.pzy@alibaba-inc.com
  */
-//@Mapper
+//@Mapper       // 配置中已经写了@MapperScan("host.sdyy.mapper")
+                // 会扫描这个包下面的所有接口类，可以不用单独写@Mapper注解了
 public interface MVCMybatisDemoUserMapper {
     MVCMybatisDemoUser queryUserInfo(String id);
 }
