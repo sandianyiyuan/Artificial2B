@@ -20,6 +20,7 @@ public class StudentsAndCourseImpl implements StudentsAndCourse {
     @Override
     public void ClassesEnrolledStudent(int studentId, Model model){
         List<Course> courses = studentCourseMapper.searchCourseByStudentId(studentId);
-        model.addAllAttributes(courses);
+        System.out.println(courses);
+        model.addAttribute("courses" , courses);
     }
 }

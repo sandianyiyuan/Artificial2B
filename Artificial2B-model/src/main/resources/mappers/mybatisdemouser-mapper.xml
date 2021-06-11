@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="host.sdyy.mapper.MVCMybatisDemoUserMapper">
-
-    <!-- Read -->
-    <select id="queryUserInfo" resultType="host.sdyy.entity.MVCMybatisDemoUser">
-        select * from UserInfo where id=#{id}
-    </select>
+<!-- mapper xlm文件配置绑定关系(注册接口类),
+某个接口类,中有一个方法需要查询数据库数据,
+通过配置这个 mapper.xml 文件，namespace 中填写类名,id 填写类中的方法,这里必须一致,否则调用方法时,会提示绑定异常
+mybatis 就可以自动生成代理类，实现数据库数据的查询，并返回指定类型的数据
+-->
+<mapper namespace="host.sdyy.mapper.MybatisDemoUserMapper">
 
     <select id="findAll" resultType="host.sdyy.entity.MybatisDemoUser">
         SELECT * FROM tb_user

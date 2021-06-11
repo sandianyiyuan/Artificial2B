@@ -26,7 +26,8 @@ import org.apache.ibatis.annotations.Mapper;
  *
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
-//@Mapper
+//@Mapper       // 配置中已经写了@MapperScan("host.sdyy.mapper")
+// 会扫描这个包下面的所有接口类，可以不用单独写@Mapper注解了
 public interface MybatisDemoUserMapper {
     List<MybatisDemoUser> findAll();
 }

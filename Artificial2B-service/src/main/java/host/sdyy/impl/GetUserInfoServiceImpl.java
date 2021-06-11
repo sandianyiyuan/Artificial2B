@@ -1,8 +1,6 @@
 package host.sdyy.impl;
 
 
-import host.sdyy.entity.MVCMybatisDemoUser;
-import host.sdyy.mapper.MVCMybatisDemoUserMapper;
 import host.sdyy.GetUserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
