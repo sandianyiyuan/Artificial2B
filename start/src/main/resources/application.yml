@@ -1,0 +1,12 @@
+swagger:
+  base-package: 'host.sdyy.Artificial2B'
+  base-path: '/**'
+  title: '注解方式的Swagger'
+  description: '这是注解方式的Swagger'
+  version: '2.0'
+  license-url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+  license: 'The Apache License'
+  contact:
+    name: '三点一圆'
+    url: 'sdyy,host'
+    email: 'sdyy@sdyy.host'

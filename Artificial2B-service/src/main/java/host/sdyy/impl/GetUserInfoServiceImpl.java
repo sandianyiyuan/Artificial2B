@@ -2,9 +2,13 @@ package host.sdyy.impl;
 
 
 import host.sdyy.GetUserInfoService;
+import host.sdyy.entity.MybatisDemoUser;
+import host.sdyy.mapper.MybatisDemoUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
+
+import java.util.List;
 
 
 
@@ -18,7 +22,7 @@ import org.springframework.ui.Model;
 public class GetUserInfoServiceImpl implements GetUserInfoService{
 
     @Autowired
-    protected MVCMybatisDemoUserMapper mVCMybatisDemoUserMapper;
+    protected MybatisDemoUserMapper mybatisDemoUserMapper;
 
     @Override
     public void getUserInfoById(String id, Model model)
@@ -26,10 +30,7 @@ public class GetUserInfoServiceImpl implements GetUserInfoService{
 
 
         //search by id, get UserInfo
-        MVCMybatisDemoUser user = mVCMybatisDemoUserMapper.queryUserInfo(id);
-        model.addAttribute("name", user.getId())
-                .addAttribute("age", user.getAge())
-                .addAttribute("height", user.getHeight())
-                .addAttribute("weight", user.getWeight());
+        List<MybatisDemoUser> users = mybatisDemoUserMapper.findAll();
+        model.addAttribute("users", users);
     }
 }

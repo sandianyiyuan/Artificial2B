@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -20,5 +21,16 @@ public class StudentCourseController {
     public String searchCourseByStudentId(@RequestParam(name = "studentId", required = false, defaultValue = "1") int studentId, Model model){
         studentsAndCourse.ClassesEnrolledStudent(studentId,model);
         return "StudentChooseClasses";
+    }
+
+    @RequestMapping({"/","/index"})
+    public String toIndex(Model model){
+        model.addAttribute("msg","HelloShiro");
+        return "index";
+    }
+
+    @RequestMapping("/user/add")
+    public String add(){
+        return "user/add";
     }
 }
